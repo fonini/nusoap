@@ -1,5 +1,5 @@
 {
-  "name": "econea/nusoap",
+  "name": "fonini/nusoap",
   "type": "library",
   "description": "Fixed NuSOAP for PHP 5.6 - 7.3",
   "keywords": ["soap","nusoap","php","http","xml","transport","client"],
