@@ -5221,8 +5221,11 @@ class wsdl extends nusoap_base
                             $this->currentBinding = $attrs['name'];
                         }
                         $this->status = 'binding';
-                        $this->bindings[$this->currentBinding]['portType'] = $this->getLocalPart($attrs['type']);
-                        $this->debug("current binding: $this->currentBinding of portType: " . $attrs['type']);
+
+                        if (isset($attrs['type'])){
+                            $this->bindings[$this->currentBinding]['portType'] = $this->getLocalPart($attrs['type']);
+                            $this->debug("current binding: $this->currentBinding of portType: " . $attrs['type']);
+                        }
                     }
                     break;
                 case 'service':
